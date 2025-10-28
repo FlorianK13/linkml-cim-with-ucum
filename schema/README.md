@@ -1,0 +1,1 @@
+This schema file `im_tc57cim.yml` is taken from https://github.com/Netbeheer-Nederland/im-tc57cim/
