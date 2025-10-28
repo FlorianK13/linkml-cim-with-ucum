@@ -1,8 +1,8 @@
 # linkml-cim-with-ucum
 The goal is to have a linkml schema of CIM, but without nested attributes. 
 
-## The problem of nested attribute
-In the current schema, quantities are objects:
+## What are nested attribute
+In the current schema, quantities are objects. See the `Length` class in this example:
 
 ```yml
 classes:
