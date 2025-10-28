@@ -45,4 +45,4 @@ In `main.py`, these steps are done:
 2. Find all classes that represent quantities (i.e. classes that have only three attributes `value`, `multiplier`, `unit`). These are now reffered as "quantity classes".
 3. Replace all attributes in all classes that have a quantity class as range. The new range is decimal, and the unit is taken from the `cim-quantities-to-ucum.yml` mapping.
 4. Delete the quantity classes.
-5. Save the new schema.
+5. Save the new schema to `cim-with-ucum.yml`.
