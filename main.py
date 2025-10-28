@@ -45,7 +45,7 @@ def delete_classes(schema: dict, classes_to_delete: dict) -> None:
 if __name__ == "__main__":
     schema = load_yaml("schema/im_tc57cim.yml")
     quantities = find_quantity_classes(schema)
-    ucum_map = load_yaml("cim-quantities-to-ucum.yml")
+    ucum_map = load_yaml("mapping-quantities-to-ucum.yml")
     updated = replace_quantity_classes(schema, ucum_map, quantities)
     delete_classes(updated, quantities)
     yaml.safe_dump(updated, open("cim-with-ucum.yml", "w"))
