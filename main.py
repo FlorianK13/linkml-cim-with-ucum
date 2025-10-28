@@ -48,4 +48,10 @@ if __name__ == "__main__":
     ucum_map = load_yaml("mapping-quantities-to-ucum.yml")
     updated = replace_quantity_classes(schema, ucum_map, quantities)
     delete_classes(updated, quantities)
-    yaml.safe_dump(updated, open("cim-with-ucum.yml", "w"))
+    yaml.safe_dump(
+        updated,
+        open("cim-with-ucum.yml", "w"),
+        indent=2,
+        default_flow_style=False,
+        sort_keys=False,
+    )
